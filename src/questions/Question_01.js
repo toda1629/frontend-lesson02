@@ -23,8 +23,8 @@ export default function Question_01() {
 
   // 定数群
   const message = "Hello World!";   // 変更しない
-  const date = "2024/09/25";                  // 本日の日付 (YYYY/MM/DD)
-  const id = "000";                    // あなたの学籍番号
+  const date = "2024/10/06";    // 本日の日付 (YYYY/MM/DD)
+  const id = "001";         // 出席番号
 
   return (
     <div>
@@ -34,6 +34,7 @@ export default function Question_01() {
       <h1>{message}</h1>
       <div>{date}</div>
       <p>{id}</p>
+
       {/* ↑↑↑ 描画する内容を書く ↑↑↑ */}
       </div>
       <h1 className='question-title'>期待結果 (画像)</h1>
