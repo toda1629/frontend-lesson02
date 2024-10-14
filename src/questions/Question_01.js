@@ -1,5 +1,8 @@
 import React from 'react'
 import ExpectedImg from '../resources/img/Expected_Question_01.png'
+import ExpectedImg2 from '../resources/img/image_illust.png'
+
+
 
 /**
  * 【問１】React要素の作成
@@ -24,16 +27,30 @@ export default function Question_01() {
   // 定数群
   const message = "Hello World!";   // 変更しない
   const date = "2024/10/06";    // 本日の日付 (YYYY/MM/DD)
-  const id = "001";         // 出席番号
+  const id = "001";
+  const sum = 2 * 5; 
+  const backgroundColor = "#eea3ac";
+  const fontSize = "52px";
+  const color = "#f6ff00";  // 背景色を設定       // 出席番号
+  const styles = {
+    backgroundColor: "#f0f0f0",  // 背景色
+    fontSize: "24px",            // フォントサイズ
+    color: "#333",               // テキストカラー
+    padding: "20px",             // パディング
+    borderRadius: "10px"         // ボーダーの丸み
+  };
 
   return (
     <div>
-      <h1 className='question-title'>【問１】React要素の作成</h1>
+      <h1 style={{ backgroundColor: backgroundColor,fontSize,color }}>【問１】React要素の作成</h1>
       <div className='question-content'>
       {/* ↓↓↓ 描画する内容を書く ↓↓↓ */}
-      <h1>{message}</h1>
+      <h1 style={styles}>{message}</h1>
       <div>{date}</div>
       <p>{id}</p>
+      <p>{sum}</p>
+      <img src={ExpectedImg2} />
+
 
       {/* ↑↑↑ 描画する内容を書く ↑↑↑ */}
       </div>
