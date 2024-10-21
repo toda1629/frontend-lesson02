@@ -1,12 +1,13 @@
 ## 表示の確認　ローカルサーバーで起動
 ```
-    npm install -s ; npm run start
+    npm run start
+```
+
+```
+npm install -s ; npm run start
 ```
 
 
-## 時間を表示させる
+## ソートする
 
-    const now = new Date();
-      const hours = String(now.getHours()).padStart(2, '0'); // 時間
-      const minutes = String(now.getMinutes()).padStart(2, '0'); // 分
-      const currentTime = `${hours}:${minutes}`; // "HH:MM:SS" 形式で表示
+     const 変数名 = kyusyu.sort((変数名1, 変数名2) => 変数名2.population - 変数名1.population);
