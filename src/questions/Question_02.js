@@ -2,7 +2,7 @@ import React from 'react'
 import ExpectedImg from '../resources/img/Expected_Question_02.png'
 
 /**
- * 【問２】Array 操作
+ * 【問２】Array（配列） 操作
  *
  * 定数 kyusyu には九州地方の各県の情報が保存されています
  * 現状は配列の先頭から順番に情報を表示している状態です
@@ -33,9 +33,7 @@ export default function Question_02() {
   const result = kyusyu.map((el, index) => {
     return (
       <li key={index}>
-        <div>No.{index + 1}</div>
-        <div>{el.name}</div>
-        <div>{el.population.toLocaleString()} 人</div>
+       
       </li>
     );
   });
@@ -45,7 +43,8 @@ export default function Question_02() {
       <h1 className='question-title'>【問２】Array 操作</h1>
       <div className='question-content q2'>
         <ul>
-          {result}
+        {/* ここに表示させる */}
+        
         </ul>
       </div>
       <h1 className='question-title'>期待結果 (画像)</h1>
