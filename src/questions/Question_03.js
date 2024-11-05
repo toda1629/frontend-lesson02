@@ -11,14 +11,14 @@ import ButtonComponent from "./Question_03_Component";
  * このコンポーネントにプロパティを渡して描画してください
  *
  * 【ヒント】
- * コンポーネント呼出しは <コンポーネント名 /> でできます
- * 呼出したいコンポーネントは button と message というプロパティを待ち受けています
+     ## ソートする
+     const 変数名 = kyusyu.sort((変数1, 変数2) => 変数2.population - 変数1.population);
  */
 
 export default function Question_03() {
 
   // コンポーネントに渡したい値
-  const button = "なにもしないボタン";
+  const button = "ClickMe!";
   const message = "※押しても何も起きません";
 
   return (
@@ -26,10 +26,12 @@ export default function Question_03() {
       <h1 className='question-title'>【問３】コンポーネント呼出し</h1>
       <div className='question-content'>
       {/* ↓↓↓ コンポーネント呼び出しを書く ↓↓↓ */}
-      <ButtonComponent button={button} message={message} />
+      
+      
+     
       {/* ↑↑↑ コンポーネント呼び出しを書く ↑↑↑ */}
       </div>
-      <h1 className='question-title'>期待結果 (画像)</h1>
+      <h1 className='question-title'>仕上がり見本 (画像)</h1>
       <img src={ExpectedImg} />
     </div>
   );

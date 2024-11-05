@@ -28,8 +28,7 @@ export default function Question_04() {
     <div>
       <h1 className='question-title'>【問５】 State の管理</h1>
       <div className='question-content'>
-        <input type="text" value={text} onChange={handleChange}/>
-        <p>入力値：<span>{text}</span></p>
+       
       </div>
       <h1 className='question-title'>期待結果 (画像)</h1>
       <img src={ExpectedImg} />
