@@ -14,17 +14,15 @@ import ExpectedImg from '../resources/img/Expected_Question_04.png'
 
 export default function Question_04() {
 
-  // ボタンが押されたときに実行したい処理
-  function handleOnClick() {
-    alert("ボタンが押されました！！");
-  }
+  // ↓↓↓ボタンが押されたときに実行したい処理↓↓↓
+  
 
   return (
     <div>
       <h1 className='question-title'>【問４】 イベントリスナの設定</h1>
       <div className='question-content'>
       {/* ↓↓↓ イベントリスナの設定を書く ↓↓↓ */}
-
+     
       {/* ↑↑↑ イベントリスナの設定を書く ↑↑↑ */}
       </div>
       <h1 className='question-title'>期待結果 (画像)</h1>
