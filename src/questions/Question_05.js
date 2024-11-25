@@ -16,7 +16,7 @@ import ExpectedImg from '../resources/img/Expected_Question_05.png'
 
 export default function Question_04() {
 
-  // state 変数
+  // state 変数　text（現在の入力値）を管理します。
   const [text, setText] = useState("");
 
   // 入力値に変更が生じたときの処理
@@ -28,7 +28,11 @@ export default function Question_04() {
     <div>
       <h1 className='question-title'>【問５】 State の管理</h1>
       <div className='question-content'>
-       
+        {/* ここにテキストフォームを入れる */}
+
+        {/* 入力値の横に、テキストを入力した値がリアルタイムに表示 */}
+        <p>入力値：<span></span></p>
+      
       </div>
       <h1 className='question-title'>期待結果 (画像)</h1>
       <img src={ExpectedImg} />

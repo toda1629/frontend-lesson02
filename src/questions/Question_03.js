@@ -18,8 +18,8 @@ import ButtonComponent from "./Question_03_Component";
 export default function Question_03() {
 
   // コンポーネントに渡したい値
-  const button = "";/*ボタンの中に表示する文字*/ 
-  const message = "";/*押しても何も出ない*/
+  const button = "ClickMe!";
+  const message = "※押しても何も起きません";
 
   return (
     <div>
@@ -27,7 +27,7 @@ export default function Question_03() {
       <div className='question-content'>
       {/* ↓↓↓ コンポーネント呼び出しを書く ↓↓↓ */}
       
-      <ButtonComponent button={？？？} message={？？？} />
+      <ButtonComponent button={button} message={message} />
      
       {/* ↑↑↑ コンポーネント呼び出しを書く ↑↑↑ */}
       </div>

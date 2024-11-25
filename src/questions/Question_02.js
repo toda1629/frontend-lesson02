@@ -21,22 +21,24 @@ export default function Question_02() {
   // 定数に追加をして人口の横に県庁所在地が表示されるようにする
   // 定数群
   const kyusyu = [
-    { "name" : "福岡県", "population" : 5135214 },
-    { "name" : "佐賀県", "population" : 811442 },
-    { "name" : "長崎県", "population" : 1312317 },
-    { "name" : "熊本県", "population" : 1738301 },
-    { "name" : "大分県", "population" : 1123852 },
-    { "name" : "宮崎県", "population" : 1069576 },
-    { "name" : "鹿児島県", "population" : 1588256 },
-    { "name" : "沖縄県", "population" : 1467480 }
+    { "name" : "福岡県", "population" : 5135214, "office" : "福岡市" },
+    { "name" : "佐賀県", "population" : 811442, "office" : "佐賀市" },
+    { "name" : "長崎県", "population" : 1312317, "office" : "長崎市" },
+    { "name" : "熊本県", "population" : 1738301, "office" : "熊本市" },
+    { "name" : "大分県", "population" : 1123852, "office" : "大分市" },
+    { "name" : "宮崎県", "population" : 1069576, "office" : "宮崎市" },
+    { "name" : "鹿児島県", "population" : 1588256, "office" : "鹿児島市" },
+    { "name" : "沖縄県", "population" : 1467480, "office" : "那覇市" }
   ];
 
   const sortmap = kyusyu.sort((sample_a, sample_b) => sample_b.population - sample_a.population);
   const result = kyusyu.map((el, index) => {
     return (
       <li key={index}>
-        <div>No.{index}</div>
-       
+        <div>No.{index + 1}</div>
+        <div>{el.name}</div>
+        <div>{el.population} 人</div>
+        <div>県庁所在地：{el.office} </div>
       </li>
     );
   });
